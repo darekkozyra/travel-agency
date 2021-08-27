@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import Home from './components/views/Home/Home';
