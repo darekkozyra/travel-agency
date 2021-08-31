@@ -9,7 +9,7 @@ describe('Component Hero', () => {
   });
   
   it('should throw error without required props', () => {
-    expect(() => shallow(<Hero />)).toThrow()
+    expect(() => shallow(<Hero />)).toThrow();
   });
   
   it('should render correct title', () => {
