@@ -49,7 +49,10 @@ const OrderForm = ({tripCost, options, setOrderOption, code, tripName, order, tr
     ))}
     <Col xs={12}>
       <OrderSummary cost={tripCost} options={options}/>
-      <Button onClick={() => sendOrder(options, tripCost, tripName, tripId, code)}>Order now!</Button>
+      <Button onClick={() => 
+        order.options.name && order.options.contact ?
+        sendOrder(options, tripCost, tripName, tripId, code) : 
+        alert('Please fill your name and contact')}>Order now!</Button>
     </Col>
   </Row>
 );
